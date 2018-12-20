@@ -3,7 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import request from './helpers/request'
 
+Vue.prototype.request = request
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
