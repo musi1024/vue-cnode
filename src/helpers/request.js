@@ -16,7 +16,7 @@ export default function request(url, type, data = {}) {
       option.data = data
     }
     axios(option).then((respons) => {
-      if (respons.data.status === 'ok') {
+      if (respons.data.success) {
         resolve(respons.data)
       } else {
         reject(respons.data)
